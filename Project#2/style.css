@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body,html{ 
+    height: 100%;
+    background-color: lightskyblue;
+    display: grid;
+    place-items: center;
+}
+.container{
+    width: 500px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 25px 30px;
+    box-shadow: 5px 5px 20 px rgba(0, 0, 0,0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+h4{
+    font-size: 28px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    text-transform: capitalize;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+form .inputBtn{
+    outline: none;
+    margin: 10px 10px;
+    width: 450px;
+    height: 40px;
+    padding: 10px 0;
+    font-size: 24px;
+    text-align: center;
+}
+form .submitBtn{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: green;
+    text-align: center;
+    
+}
+h5{
+    background-color: #FFD4CD;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+
+}
+.feedback{
+    display: none;
+}
+.messageContent{
+    color: red;
+}
+.show{
+    display: block;
+}
