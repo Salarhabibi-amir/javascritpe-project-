@@ -1,27 +1,28 @@
-(function(){
+(function() {
     let screen = document.querySelector(".screen");
     let buttons = document.querySelectorAll(".btn");
     let equal = document.querySelector(".btn-eqaul");
     let clear = document.querySelector(".btn-Clean");
 
-   
-    buttons.forEach(function(button){
-        button.addEventListener('click',function(e){
-           let val = e.target.dataset.num;
+
+    buttons.forEach(function(button) {
+        button.addEventListener('click', function(e) {
+            let val = e.target.dataset.num;
             screen.value += val;
-     
+
         })
     })
-    
-    equal.addEventListener('click',function(e){
-        if(screen.value === ''){
+
+    equal.addEventListener('click', function(e) {
+
+        if (screen.value === '') {
             screen.value = "";
-        }else{
+        } else {
             let answer = eval(screen.value);
             screen.value = answer;
         }
-          })
-    clear.addEventListener('click',function(e){
+    })
+    clear.addEventListener('click', function(e) {
         screen.value = "";
     })
 })();
